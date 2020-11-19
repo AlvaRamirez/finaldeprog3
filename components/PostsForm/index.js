@@ -3,39 +3,39 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios';
 import { Container } from './styles'
 
-const SignUpForm = () => {
+const PostsForm = ({userId}) => {
     const [message, setMessage] = useState('');
     return (
         <Container>
             <Formik
-                initialValues={{ email: '', password: '', name: '' }}
+                initialValues={{ title: '', excerpt: '', content: '' }}
                 validate={values => {
                     const errors = {};
-                    if (!values.email) {
-                        errors.email = 'Required';
+                    if (!values.title) {
+                        errors.title = 'Requerido';
                     }
-                    if (!values.password) {
-                        errors.password = 'Required';
+                    if (!values.excerpt) {
+                        errors.excerpt = 'Requerido';
                     }
-                    if (!values.name) {
-                        errors.name = 'Required';
+                    if (!values.content) {
+                        errors.content = 'Requerido';
                     }
                     return errors;
                 }}
                 onSubmit={
+
                     async (values, { setSubmitting }) => {
                         try {
-                            const res = await axios.post('api/auth/register', values)
+                            const res = await axios.post('/api/posts/create', {...values, user_id:userId})
                             const data = await res.data
                             setSubmitting(false);
-                            setMessage(`${data.message} - ${data.name}`)
+                            setMessage(`Post creado, thanks ${data.title} (${res.status})`)
                         } catch (error) {
                             if (error.response) {
-                              
-                                console.log(error);
-                                setMessage(`Error: ${error.response.data.error} (${error.response.data.code})`)
+                                console.log(error.response.data);
+                                console.log(error.response.status);
+                                console.log(error.response.headers);
                             } else if (error.request) {
-                              
                                 console.log(error.request);
                             } else {
                                 console.log('Error', error.message);
@@ -48,26 +48,26 @@ const SignUpForm = () => {
                 {({ isSubmitting }) => (
                     <Form>
                         <div className="input_row">
-                            <Field type="email" name="email" placeholder="Email" />
-                            <ErrorMessage name="email" component="div" />
+                            <Field type="text" name="title" placeholder="Título" />
+                            <ErrorMessage name="title" component="div" />
                         </div>
                         <div className="input_row">
-                            <Field type="password" name="password" placeholder="Password" />
-                            <ErrorMessage name="password" component="div" />
+                            <Field type="text" name="excerpt" placeholder="Bajada" />
+                            <ErrorMessage name="company" component="div" />
                         </div>
                         <div className="input_row">
-                            <Field type="text" name="name" placeholder="Nombre" />
-                            <ErrorMessage name="name" component="div" />
+                            <Field as="textarea" type="content" name="content" placeholder="Contenido" />
+                            <ErrorMessage name="content" component="div" />
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
-                            Submit
+                        <button type="submit" disabled={isSubmitting} className="orange">
+                            Enviar
                         </button>
                     </Form>
                 )}
             </Formik>
-            <p className="error_message">{message}</p>
+            <p>{message}</p>
         </Container>
     )
 }
 
-export default SignUpForm;
+export default PostsForm;
