@@ -4,7 +4,7 @@ import Container from './styles';
 const Login = () => {
     return (
         <Container>
-            <h1>Login</h1>
+            <h1 className="tit"> Login</h1>
             <LoginForm />
         </Container>
     )

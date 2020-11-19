@@ -9,14 +9,14 @@ const Header = () => {
             <HeaderContainer>
               
                    <div className="contnav">
-                <img src="./assets/logo.png"></img>
+               <a href="/"> <img src="./assets/logo.png"></img></a>
                 </div>
 
                 <div className="contnav">
                 <ul>
-                    <li><img src="./assets/more.png"></img></li>
-                    <li><img src="./assets/user.png"></img></li>
-                    <li><img src="./assets/conf.png"></img></li>
+                    <li> <a href="dashboard"><img  src="./assets/more.png"></img></a></li>
+                    <li><a href="login" ><img src="./assets/user.png"></img></a></li>
+                    <li><img  id="conf" src="./assets/conf.png"></img></li>
                 </ul>
                 </div>
 

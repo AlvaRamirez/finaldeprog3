@@ -16,7 +16,6 @@ width: 100%;
     display: flex;
     -webkit-align-items: center;
     -webkit-box-align: center;
-    height: 7vh;
     -ms-flex-align: center;
     -webkit-align-items: center;
     -webkit-box-align: center;

@@ -8,11 +8,11 @@ const Footer = () => {
                 </div>
 
                 <div className="contnav">
-                <ul>
+                {/* <ul>
                     <li><img className="redes" src="./assets/facebook.png"></img></li>
                     <li><img className="redes" src="./assets/instagram.png"></img></li>
                     <li><img className="redes" src="./assets/youtube.png"></img></li>
-                </ul>
+                </ul> */}
                 </div>
         </FooterContainer>
     )

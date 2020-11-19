@@ -11,8 +11,7 @@ const Dashboard = () => {
 
     return (
         <Container>
-            <h1>Dashboard</h1>
-            <h2>{auth.user.email}</h2>
+            <h2 className="mail">{auth.user.email}</h2>
             <PostsForm  userId={auth.user.id}/>
             <ListPosts  userId={auth.user.id}/>
         </Container>

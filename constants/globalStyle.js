@@ -22,11 +22,11 @@ body {
     margin: 0 auto;
 }
 h1 {
-    color: #fff;
+  color: #fff;
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 4em;
     font-family: 'Montserrat',sans-serif;
-    font-size: 1.7em;
+    font-size: 1.3em;
 }
 
 .inner {max-width:1200px; margin: 0 auto;}
@@ -92,12 +92,12 @@ ul{
 }
 
 .cardcont {
-    display: grid;
+  display: grid;
     justify-items: center;
     display: grid;
     margin: 0 auto;
-    padding-top: 1.5em;
-    padding-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2.8em;
     display: grid;
     grid-template-columns: [x0] 0fr [x1] 1fr [x2] 0fr [x3];
 }
@@ -114,10 +114,15 @@ li{
   padding-right: 2em;
 }
 
+#conf{
+  width: 15px;
+}
+
 li img{
-  width: 30px;
-  cursor:pointer;
-  transition:0.8s ;
+  width: 25px;
+    cursor: pointer;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
 }
 
 li img:hover{
@@ -131,38 +136,143 @@ li img:active{
 }
 
 .card-title {
-    font-size: 18px !important;
+    font-size: 16px !important;
     font-weight: bold!important;
     font-family: 'Montserrat',sans-serif;
 }
 
 .card-text {
     font-family: 'Poppins',sans-serif;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
     background: #fff;
     border: 0;
-    padding: 10px 30px 10px 30px !important;
+    padding: 5px 15px 5px 15px !important;
     color: #fff;
     background-color: #2481cc;
     text-align: center;
     margin: 0 auto;
-    font-size: 14px;
-    border-radius: 10px;
+    font-size: 13px;
+    border-radius: 6px;
     text-align: center;
     outline: none;
     font-family: monser;
     border: none;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     font-family: 'Poppins';
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     font-weight: 600;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     margin: 0 auto;
     justify-items: center;
+    transition:0.7s;
+}
+
+form{
+  padding: 30px;
+    width: 100% !important;
+    display: grid !important;
+    -webkit-box-pack: center !important;
+    -webkit-justify-content: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    height: 50vh !important;
+    margin: 0px auto !important;
+    text-align: center !important;
+    -webkit-box-align: center !important;
+    -webkit-align-items: center !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    outline: none !important;
+    margin: 0 auto !important;
+    padding: 0px !important;
+    font-family: 'Poppins';
+    border-radius: 0em !important;
+}
+
+
+.kKcyHH input, .kKcyHH select, .kKcyHH textarea {
+  width: 100%;
+    min-height: 60px;
+    line-height: 34px;
+    border: none;
+    border-radius:10px;
+    background: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 12px;
+    padding-bottom: 1em;
+    padding-right: 4em;
+    resize: none;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    outline:none;
+}
+.tit{
+  text-align: center;
+    color: #00d0ff;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+.kKcyHH .input_row div {
+    position: absolute;
+    top: 19px;
+    font-size: 13px;
+    right: 22px;
+    color: #8a8a8a;
+}
+
+
+.mail{
+  text-align: center;
+    margin-top: 5.3em;
+    color: #00d0ff;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+button:hover{
+  background-color: #2481ccb5;
+  transition:0.7s;
+}
+
+.kKcyHH input[type='submit'], .kKcyHH button {
+    width: 100px;
+    cursor: pointer;
+    opacity: 1.8;
+    background: #192850 !important;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 3em;
+    padding: 10px 10px !important;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #000;
+    margin: 0 auto;
 }
 
 `;
