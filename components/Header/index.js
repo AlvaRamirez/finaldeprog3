@@ -14,9 +14,9 @@ const Header = () => {
 
                 <div className="contnav">
                 <ul>
-                    <li> <a href="dashboard"><img  src="./assets/more.png"></img></a></li>
-                    <li><a href="login" ><img src="./assets/user.png"></img></a></li>
-                    <li><img  id="conf" src="./assets/conf.png"></img></li>
+                    {/* <li> <a href="dashboard"><img  src="./assets/more.png"></img></a></li> */}
+                    <li><p>Usuario</p></li>
+                    <li><img  id="conf" src="./assets/logout.png"></img></li>
                 </ul>
                 </div>
 

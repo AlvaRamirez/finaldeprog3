@@ -60,7 +60,7 @@ const EditForm = ({values, handleEditFormClose}) => {
                             <Field as="textarea" type="content" name="content" placeholder="Contenido" />
                             <ErrorMessage name="content" component="div" />
                         </div>
-                        <button type="submit" disabled={isSubmitting} className="orange">
+                        <button type="submit" disabled={isSubmitting}>
                             Enviar
                         </button>
                     </Form>

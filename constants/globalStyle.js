@@ -24,9 +24,12 @@ body {
 h1 {
   color: #fff;
     margin: 0 auto;
-    padding-top: 4em;
+    padding-top: 5.5em;
     font-family: 'Montserrat',sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1.5em;
 }
 
 .inner {max-width:1200px; margin: 0 auto;}
@@ -35,7 +38,6 @@ h1 {
 button:first-child {margin-left:0;}
 
 .red {background-color: #ff0000;}
-.orange {background-color: #FF5000!important;}
 .hightlight {background-color: #F0B40A; color: #320A46;}
 .hightlight_over {background-color: #eee; color: #320A46;}
 
@@ -56,8 +58,15 @@ button:first-child {margin-left:0;}
     font-style: oblique;
     color: #b5b5b5;
 }
-.contnav p{
-  font-size: 12px;
+.contnav p {
+    font-size: 16px;
+    font-style: normal;
+    color: white;
+    margin-top: 0 auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+    margin-top: 12px;
 }
 
 .contnav img{
@@ -92,15 +101,60 @@ ul{
 }
 
 .cardcont {
-  display: grid;
-    justify-items: center;
-    display: grid;
-    margin: 0 auto;
+      /* display: grid; */
+      justify-items: center;
+    display: inline-flex;
+    /* margin: 0 auto; */
     padding-top: 2em;
-    padding-bottom: 2.8em;
-    display: grid;
-    grid-template-columns: [x0] 0fr [x1] 1fr [x2] 0fr [x3];
+    /* padding-bottom: 2.8em; */
+    /* display: grid; */
+    /* grid-template-columns: [x0] 0fr [x1] 1fr [x2] 0fr [x3]; */
+    width: 100%;
 }
+
+.contuni{
+  width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    transition:0.6s all;
+    border-radius: 1em;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 3px 10px -4px rgb(0 0 0 / 43%);
+    -moz-box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
+}
+
+
+.contuni:hover{
+  width: 53%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 2em;
+    margin: 0 auto;
+    opacity:0.9;
+    text-align: center;
+    transition:0.6s all;
+    border-radius: 1em;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 3px 10px -4px rgb(0 0 0 / 43%);
+    -moz-box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
+}
+
+.contuni a img{
+  transition:0.6s all;
+}
+
+.contuni a img:hover{
+  transform:scale(1.1);
+  transition:0.6s all;
+}
+
 .card{
   width: 20rem;
     margin: 0 auto;
@@ -115,7 +169,7 @@ li{
 }
 
 #conf{
-  width: 15px;
+  width: 30px;
 }
 
 li img{
@@ -236,6 +290,25 @@ form{
     font-family: 'Montserrat';
 }
 
+
+.kuQQik input, .kuQQik select, .kuQQik textarea {
+    width: 100%;
+    min-height: 50px;
+    line-height: 34px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 0.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 12px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+}
+
 .kKcyHH .input_row div {
     position: absolute;
     top: 19px;
@@ -256,7 +329,7 @@ form{
 }
 
 button:hover{
-  background-color: #2481ccb5;
+  background-color: #2481cce0;
   transition:0.7s;
 }
 

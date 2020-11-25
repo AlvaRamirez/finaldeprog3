@@ -4,7 +4,7 @@ import Container from './styles';
 const SignUp = () => {
     return (
         <Container>
-            <h1>Sign Up</h1>
+            <h1 className="tit">Sign Up</h1>
             <SignUpForm />
         </Container>
     )
