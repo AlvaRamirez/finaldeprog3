@@ -104,43 +104,56 @@ ul{
 .cardcont {
       /* display: grid; */
       justify-items: center;
-    display: inline-flex;
+      display: grid;
     /* margin: 0 auto; */
     padding-top: 2em;
     /* padding-bottom: 2.8em; */
     /* display: grid; */
     /* grid-template-columns: [x0] 0fr [x1] 1fr [x2] 0fr [x3]; */
     width: 100%;
+    padding-bottom: 4em;
 }
 
 .contuni{
-  width: 50%;
+  width: 11%;
     margin: 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: white;
     padding: 2em;
     margin: 0 auto;
     text-align: center;
-    transition:0.6s all;
-    border-radius: 1em;
-    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
-    -webkit-box-shadow: 0px 3px 10px -4px rgb(0 0 0 / 43%);
-    -moz-box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
+    border-radius: 6em;
+    margin-bottom: 2em !important;
 }
 
 
 .contuni:hover{
-  width: 53%;
+  width: 12%;
     margin: 0 auto;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-align-items: center;
+    /* opacity: 0; */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-    background: white;
+    background: #bce7e5;
     padding: 2em;
     margin: 0 auto;
-    opacity:0.9;
     text-align: center;
-    transition:0.6s all;
+    -webkit-transition: 0.6s all;
+    transition: 0.6s all;
     border-radius: 1em;
     box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
     -webkit-box-shadow: 0px 3px 10px -4px rgb(0 0 0 / 43%);
@@ -163,6 +176,9 @@ ul{
     background-color: white;
     border-radius: 1em;
     margin: 20px 0px 20px 0px;
+    box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 0px 3px 10px -4px rgb(0 0 0 / 43%);
+    -moz-box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
 }
 
 li{
@@ -194,14 +210,31 @@ li img:active{
 }
 
 .card-title {
-    font-size: 16px !important;
+  font-size: 20px !important;
     font-weight: bold!important;
+    text-transform: capitalize;
     font-family: 'Montserrat',sans-serif;
 }
 
 .card-text {
-    font-family: 'Poppins',sans-serif;
-    font-size: 13px;
+  font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    color: #5f5f5f;
+}
+
+.card a{
+  text-decoration: none;
+    color: #fefeff;
+    /* font-weight: 900; */
+    background-color: #192850;
+    padding: 8px 23px 8px 23px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px 0px 0px 0px;
+    float: right;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 button {
@@ -324,11 +357,12 @@ form{
 
 .mail{
   text-align: center;
-    margin-top: 5.3em;
+    padding-top: 10.3em;
     color: #00d0ff;
     font-size: 20px;
     font-style: oblique;
     font-weight: 500;
+    margin: 0 auto;
     font-family: 'Montserrat';
 }
 

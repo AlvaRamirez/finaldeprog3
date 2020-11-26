@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import { Container as HeaderContainer } from './styled'
+import { useProtected } from 'lib/useProtected';
 import { useUser } from 'lib/useUser';
 
 const Header = () => {
     const auth = useUser();
+    const auth2 = useProtected();
+
+    if (!auth2.user) return null;
     return (
         <>
             <Head />
@@ -17,7 +21,7 @@ const Header = () => {
                 <div className="contnav">
                 <ul>
                     {/* <li> <a href="dashboard"><img  src="./assets/more.png"></img></a></li> */}
-                    <li><p>Usuario</p></li>
+                    <li><p>{auth2.user.email}</p></li>
                     <li><img  onClick={() => auth.logout()} id="conf" src="./assets/logout.png"></img></li>
                 </ul>
                 </div>

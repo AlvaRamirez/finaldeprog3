@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import axios from 'axios';
 import { Container } from './styles'
+import { addNewCard } from '../../pages/api/posts/cards'
 
 const PostsForm = ({userId}) => {
     const [message, setMessage] = useState('');
@@ -26,10 +27,11 @@ const PostsForm = ({userId}) => {
 
                     async (values, { setSubmitting }) => {
                         try {
-                            const res = await axios.post('/api/posts/create', {...values, user_id:userId})
-                            const data = await res.data
-                            setSubmitting(false);
-                            setMessage(`Post creado, thanks ${data.title} (${res.status})`)
+                            await addNewCard({...values, user_id:userId})
+                            // const res = await axios.post('/api/posts/create', {...values, user_id:userId})
+                            // const data = await res.data
+                            // setSubmitting(false);
+                            // setMessage(`Post creado, thanks ${data.title} (${res.status})`)
                         } catch (error) {
                             if (error.response) {
                                 console.log(error.response.data);

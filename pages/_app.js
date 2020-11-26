@@ -1,9 +1,12 @@
 import GlobalStyle from '../constants/globalStyle';
 import { Layout } from 'containers';
-import { AuthProvider } from 'lib/useUser';
+import { AuthProvider, useUser } from 'lib/useUser';
 
 
 function MyApp({ Component, pageProps }) {
+//     const userFunctions=useUser();
+//    const user = userFunctions.getUser();
+   
     return (
         <>
             <GlobalStyle />

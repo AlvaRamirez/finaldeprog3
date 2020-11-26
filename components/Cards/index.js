@@ -1,17 +1,15 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
+import { default as NextLink } from 'next/link'
 
-const Cards = () => {
+const Cards = ({title, content, id}) => {
   return (
-<Card style={{ width: '18rem' }}>
+<Card style={{ width: '37rem' }}>
   <Card.Body>
-    <Card.Title>Card Title</Card.Title>
-    <Card.Text>
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
-    </Card.Text>
-    <Button variant="primary">Ver</Button>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text> {content.substr(0, 80)}... </Card.Text>
+    <NextLink href={`/contenido/${id}/`}>Leer</NextLink>
   </Card.Body>
 </Card>
   )
