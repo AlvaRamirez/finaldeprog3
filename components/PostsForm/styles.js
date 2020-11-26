@@ -5,9 +5,11 @@ export const Container = styled.div`
 .input_row div{position: absolute;
     top: 19px;
     right: 22px;
-    color:#ff0000;
+    color: gray;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
 }
-margin-top:40px;
+/* margin-top:40px;
 width:100%;
 
 .error_message{padding:20px; color:#ff0000;font-size:14px;}
@@ -22,5 +24,5 @@ input[type='radio'],
 input[type='checkbox'] { border:0; height: auto !important; background: none; padding-left: 0; line-height: inherit; min-height: 0; }
 input[type='radio']  { -webkit-appearance: radio; -moz-appearance: radio; appearance: radio;}
 input[type='checkbox'] { -webkit-appearance: checkbox; -moz-appearance: checkbox; appearance: checkbox;}
-label { font-size: 16px; }
+label { font-size: 16px; } */
 `

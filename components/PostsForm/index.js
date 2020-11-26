@@ -49,20 +49,20 @@ const PostsForm = ({userId}) => {
             >
                 {({ isSubmitting }) => (
                     <Form>
-                        <div className="input_row">
+                        <div className="input_row" id="input2">
                             <Field type="text" name="title" placeholder="Título" />
                             <ErrorMessage name="title" component="div" />
                         </div>
-                        <div className="input_row">
-                            <Field type="text" name="excerpt" placeholder="Bajada" />
+                        <div className="input_row" id="input2">
+                            <Field type="text" name="excerpt" placeholder="Subtitulo" />
                             <ErrorMessage name="company" component="div" />
                         </div>
-                        <div className="input_row">
-                            <Field as="textarea" type="content" name="content" placeholder="Contenido" />
+                        <div className="input_row" id="textarea2">
+                            <Field as="textarea" type="content" name="content" placeholder="Texto" />
                             <ErrorMessage name="content" component="div" />
                         </div>
-                        <button type="submit" disabled={isSubmitting}>
-                            Enviar
+                        <button className="button2" type="submit" disabled={isSubmitting}>
+                          <a href="/">  Enviar </a>
                         </button>
                     </Form>
                 )}

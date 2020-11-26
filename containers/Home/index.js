@@ -24,9 +24,11 @@ const Home = () => {
         
         <h1> Tus proyectos:</h1>
         <div className="cardcont">
-      <div className="contuni"><a href="dashboard"><img  src="./assets/plus.png"></img></a></div>  
+     
 
         {cards.map(card=><Cards title={card.title} content={card.content} id={card.id}/>)}
+
+        <div className="contuni"><a href="dashboard"><img  src="./assets/plus.png"></img></a></div>  
           {/* <Cards/>
           <Cards/>
           <Cards/>

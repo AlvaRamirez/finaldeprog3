@@ -5,7 +5,8 @@ export const Container = styled.div`
 .input_row div{position: absolute;
     top: 19px;
     right: 22px;
-    color:#ff0000;
+    color: gray;
+    font-size: 14px;
 }
 margin-top:40px;
 width:100%;

@@ -8,7 +8,7 @@ const Cards = ({title, content, id}) => {
 <Card style={{ width: '37rem' }}>
   <Card.Body>
     <Card.Title>{title}</Card.Title>
-    <Card.Text> {content.substr(0, 80)}... </Card.Text>
+    <Card.Text> {content.substr(0, 180)}... </Card.Text>
     <NextLink href={`/contenido/${id}/`}>Leer</NextLink>
   </Card.Body>
 </Card>
