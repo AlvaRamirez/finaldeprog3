@@ -1,5 +1,7 @@
 import Cards from '../../components/Cards'
 import { Header } from 'components'
+import Footer from '../Footer'
+
 
 const Home = () => {
     return (
@@ -20,6 +22,7 @@ const Home = () => {
             {/* <Basic /> */}
         </div>
         </div>
+        <Footer />
         </>
     )
 }

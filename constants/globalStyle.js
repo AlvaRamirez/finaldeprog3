@@ -20,6 +20,7 @@ body {
 #divcont{
   width: 70%;
     margin: 0 auto;
+    min-height: 94.7vh;
 }
 h1 {
   color: #fff;
@@ -175,15 +176,18 @@ li{
 li img{
   width: 25px;
     cursor: pointer;
-    -webkit-transition: 0.8s;
+ 
     transition: 0.8s;
 }
 
 li img:hover{
-  transition:0.8s ;
-  transform:scale(1.1);
+  transition:0.8s;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 6, 0, 0, 1) !important;
 }
 
+.error_message{
+  display:none;
+}
 
 li img:active{
   opacity:0.5;
@@ -204,7 +208,7 @@ button {
   cursor: pointer;
     background: #fff;
     border: 0;
-    padding: 5px 15px 5px 15px !important;
+    padding: 15px 25px 15px 25px !important;
     color: #fff;
     background-color: #2481cc;
     text-align: center;
@@ -346,6 +350,103 @@ button:hover{
     color: #fff;
     background-color: #000;
     margin: 0 auto;
+}
+
+.conton{
+    width: 100%;
+    display: flex;
+    min-height: 90vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.coniniz{
+  width: 60%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    min-height: 100vh;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    background-size: cover;
+    background-image: url(./assets/fondoder.jpg);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.coninder{
+width: 50%;
+    margin: 0 auto;
+    padding-top: 2.5em;
+}
+
+h2{
+  text-align: center;
+    color: white;
+    /* font-style: oblique; */
+    font-size: 28px;
+    margin-right: 10px;
+    font-family: 'Poppins',sans-serif;
+}
+
+#saludo{
+  margin-left: 8em;
+    margin-top: 20em;
+}
+
+
+input{
+  padding: 20px 50px;
+    border-radius: 1em;
+    outline: none!important;
+    border: none!important;
+}
+
+.hola{
+  color: #ffffff;
+    padding: 0px !important;
+    margin: 0 auto;
+    font-size: 5em;
+    font-weight: bold;
+    margin-left: 6px;
+    font-family: 'Montserrat',sans-serif;
+    text-align: left !important;
+
+}
+
+.irasing{
+  text-align: center;
+    color: white;
+}
+.irasing p{
+  margin:0 auto !important;
+    font-style: oblique;
+    font-size: 14px;
+    transition:0.7s all;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.irasing a{
+  text-decoration:none !important;
+  color: aqua;
+  transition:0.7s all;
+}
+
+
+.irasing a:hover{
+  opacity:0.7;
+ transition:0.7s all;
 }
 
 `;

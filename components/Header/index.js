@@ -1,10 +1,12 @@
 import Head from 'next/head'
 import { Container as HeaderContainer } from './styled'
+import { useUser } from 'lib/useUser';
 
 const Header = () => {
+    const auth = useUser();
     return (
         <>
-            <Head></Head>
+            <Head />
 
             <HeaderContainer>
               
@@ -16,7 +18,7 @@ const Header = () => {
                 <ul>
                     {/* <li> <a href="dashboard"><img  src="./assets/more.png"></img></a></li> */}
                     <li><p>Usuario</p></li>
-                    <li><img  id="conf" src="./assets/logout.png"></img></li>
+                    <li><img  onClick={() => auth.logout()} id="conf" src="./assets/logout.png"></img></li>
                 </ul>
                 </div>
 
