@@ -6,9 +6,14 @@ import { updateCard } from "../api/posts/cards";
 
 const PostsForm = () => {
   const [message, setMessage] = useState("");
-  const router = useRouter();
+  const {
+    query: { formulario },
+  } = useRouter();
+  const info = formulario?.split("-");
 
-  const [cardId, title, excerpt, content] = router.query.formulario.split("-");
+  const title = info?.title || "";
+  const excerpt = info?.excerpt || "";
+  const content = info?.content || "";
 
   return (
     <Container>
@@ -16,7 +21,6 @@ const PostsForm = () => {
         initialValues={{ title, excerpt, content }}
         onSubmit={async (values, { setSubmitting }) => {
           try {
-            console.log(values);
             await updateCard(values, cardId);
             router.push("/");
           } catch (error) {
