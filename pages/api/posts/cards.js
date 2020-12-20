@@ -26,4 +26,56 @@ const getCard = async (id) => {
     .then((response) => response.data());
 };
 
-export { addNewCard, getAllCards, getCard };
+const getCardByUser = async (user_id) => {
+  return db
+    .collection("cards")
+    .where("user_id", "==", user_id)
+    .get()
+    .then(function (querySnapshot) {
+      let cards = [];
+
+      querySnapshot.forEach(function (doc) {
+        cards = [...cards, { id: doc.id, ...doc.data() }];
+      });
+
+      return cards;
+    });
+};
+
+const deleteCardById = async (id) => {
+  try {
+    return db
+      .collection("cards")
+      .doc(id)
+      .delete()
+      .then(function () {
+        console.log("Document successfully deleted!");
+      })
+      .catch(function (error) {
+        console.error("Error removing document: ", error);
+      });
+
+  } catch (error) {
+    console.log(`ERROR`, error);
+  }
+};
+
+const updateCard = async (card, id) => {
+  try {
+    return db
+      .collection("cards")
+      .doc(id)
+      .update(card)
+      .then(function () {
+        console.log("Document successfully updated!");
+      })
+      .catch(function (error) {
+        console.error("Error removing document: ", error);
+      });
+
+  } catch (error) {
+    console.log(`ERROR`, error);
+  }
+}
+
+export { addNewCard, getAllCards, getCard, getCardByUser, deleteCardById, updateCard };

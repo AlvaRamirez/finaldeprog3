@@ -1,46 +1,42 @@
-import Cards from '../../components/Cards'
-import { Header } from 'components'
-import Footer from '../Footer'
-import React, { useState, useEffect } from 'react';
-import { getAllCards } from '../../pages/api/posts/cards';
+import Cards from "../../components/Cards";
+import { Header } from "components";
+import Footer from "../Footer";
+import React, { useState, useEffect } from "react";
+import { getAllCards } from "../../pages/api/posts/cards";
 
 const Home = () => {
-    const[cards, setCards]=useState([]);
+  const [cards, setCards] = useState([]);
 
-    useEffect(() => {
-        const fn=async()=>{
-            const res=await getAllCards();
+  useEffect(() => {
+    const fn = async () => {
+      const res = await getAllCards();
 
-            setCards(res);
-        }
+      setCards(res);
+    };
 
-        fn();
-    }, [])
+    fn();
+  }, []);
 
-    return (
-        <>
-       <Header />
-        <div id="divcont">
-        
+  return (
+    <>
+      <Header />
+      <div id="divcont">
         <h1> Tus proyectos:</h1>
         <div className="cardcont">
-     
+          {cards.map((card) => (
+            <Cards title={card.title} content={card.content} id={card.id} userId={card.user_id} />
+          ))}
 
-        {cards.map(card=><Cards title={card.title} content={card.content} id={card.id}/>)}
-
-        <div className="contuni"><a href="dashboard"><img  src="./assets/plus.png"></img></a></div>  
-          {/* <Cards/>
-          <Cards/>
-          <Cards/>
-          <Cards/>
-          <Cards/>
-          <Cards/> */}
-            {/* <Basic /> */}
+          <div className="contuni">
+            <a href="dashboard">
+              <img src="./assets/plus.png"></img>
+            </a>
+          </div>
         </div>
-        </div>
-        <Footer />
-        </>
-    )
-}
+      </div>
+      <Footer />
+    </>
+  );
+};
 
-export default Home
+export default Home;
