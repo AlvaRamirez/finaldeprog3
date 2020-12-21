@@ -21,10 +21,11 @@ const Cards = ({ title, content, id, userId }) => {
   return (
     <Card style={{ width: "37rem" }}>
       <Card.Body>
-        <h1 style={{color: '#000'}}>{user?.nombre || ""}</h1>
+        
         <Card.Title>{title}</Card.Title>
         <Card.Text> {content.substr(0, 180)}... </Card.Text>
         <NextLink href={`/contenido/${id}/`}>Leer</NextLink>
+        <p className="userp" style={{color: '#000'}}>{user?.nombre || ""}</p>
       </Card.Body>
     </Card>
   );

@@ -25,7 +25,7 @@ const Header = () => {
           <ul>
             {/* <li> <a href="dashboard"><img  src="./assets/more.png"></img></a></li> */}
             <li>
-              <NextLink href={`/perfil/${auth2.user.id}`}>{auth2.user.email}</NextLink>
+              <NextLink href={`/perfil/${auth2.user.id}`}><img id="userh" src="./assets/user.png" /></NextLink>
             </li>
             {/* <li><p>{auth2.user.email}</p></li> */}
             <li>

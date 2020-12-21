@@ -32,20 +32,22 @@ const Home = () => {
       <Header />
       <div id="divcont">
         <h1> Tus proyectos:</h1>
-        <div className="cardcont">
+        <div className="cardcont2">
           {cards?.map((card) => (
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "contents" }}>
               <Cards title={card.title} content={card.content} id={card.id} userId={card.user_id} />
+              <div className="editaryeliminar">
               <div>
-                <button onClick={(e) => onDelete(e, card.id)}>Eliminar</button>
+                <button onClick={(e) => onDelete(e, card.id)}><img src="assets/delete.png"/> </button>
               </div>
               <div>
                 <NextLink
                   href={`/formulario/${card.id}-${card.title}-${card.excerpt}-${card.content}`}
                   data={"data"}
                 >
-                  Go to Contact
+                 <img src="assets/edit.png"/> 
                 </NextLink>
+              </div>
               </div>
             </div>
           ))}

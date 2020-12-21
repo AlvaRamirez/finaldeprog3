@@ -21,18 +21,19 @@ const Home = () => {
     <>
       <Header />
       <div id="divcont">
-        <h1> Tus proyectos:</h1>
+        <h1 id="titd">Ultimos proyectos</h1>
         <div className="cardcont">
           {cards.map((card) => (
             <Cards title={card.title} content={card.content} id={card.id} userId={card.user_id} />
           ))}
 
-          <div className="contuni">
+          
+        </div>
+        <div className="contuni">
             <a href="dashboard">
               <img src="./assets/plus.png"></img>
             </a>
           </div>
-        </div>
       </div>
       <Footer />
     </>

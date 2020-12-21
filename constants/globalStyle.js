@@ -20,12 +20,14 @@ body {
 a{
   text-decoration: none;
     color: white;
+    cursor:pointer;
 }
 
 #divcont{
   width: 70%;
     margin: 0 auto;
     min-height: 95.2vh;
+    padding-bottom: 4em;
 }
 h1 {
   color: #fff;
@@ -107,21 +109,33 @@ ul{
   margin-right: 1em;
 }
 
+.editaryeliminar{
+  display: flex;
+    align-items: center;
+}
+
+#titd{
+  color: #fff;
+    margin: 0 auto;
+    padding-top: 5.5em;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 1em;
+    text-align: left;
+}
+
 .cardcont {
-      /* display: grid; */
-      justify-items: center;
-      display: grid;
-    /* margin: 0 auto; */
+  justify-items: center;
+    display: flex;
     padding-top: 2em;
-    /* padding-bottom: 2.8em; */
-    /* display: grid; */
-    /* grid-template-columns: [x0] 0fr [x1] 1fr [x2] 0fr [x3]; */
-    width: 100%;
-    padding-bottom: 4em;
+    width: 110%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .contuni{
-
+  width: 10%;
     margin: 0 auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -180,11 +194,18 @@ ul{
     padding: 25px;
     background-color: white;
     border-radius: 1em;
-    margin: 20px 0px 20px 0px;
+    margin:20px 30px 20px 0px;
     box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
     -webkit-box-shadow: 0px 3px 10px -4px rgb(0 0 0 / 43%);
     -moz-box-shadow: 0px 3px 10px -4px rgba(0,0,0,0.77);
     transition:0.6s all;
+}
+
+.cardcont2{
+  justify-items: center;
+    padding-top: 2em;
+    display: grid;
+ 
 }
 
 .card:hover{
@@ -249,6 +270,25 @@ li img:active{
     transition: 0.6s all;
     outline:none;
     border:none;
+}
+
+#userh{
+  transition: 0.8s all;
+}
+
+#userh:hover{
+
+  transition: 0.8s all !important;
+    transform: scale(1.1) !important;
+
+}
+
+.userp{
+  font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 500;
+    color: #797979 !important;
+    padding-top: 1.6em;
 }
 
 .contcont{
