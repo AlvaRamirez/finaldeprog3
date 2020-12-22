@@ -6,14 +6,11 @@ import { updateCard } from "../api/posts/cards";
 
 const PostsForm = () => {
   const [message, setMessage] = useState("");
-  const {
-    query: { formulario },
-  } = useRouter();
-  const info = formulario?.split("-");
+  const router = useRouter();
 
-  const title = info?.title || "";
-  const excerpt = info?.excerpt || "";
-  const content = info?.content || "";
+  const info = router?.query?.formulario?.split("-");
+
+  const [cardId, title, excerpt, content] = info;
 
   return (
     <Container>
