@@ -1,7 +1,8 @@
 import GlobalStyle from '../constants/globalStyle';
 import { Layout } from 'containers';
 import { AuthProvider, useUser } from 'lib/useUser';
-// import { Header } from 'components'
+import { Header } from 'components'
+import { Footer } from 'containers'
 
 function MyApp({ Component, pageProps }) {
 //     const userFunctions=useUser();
@@ -12,8 +13,9 @@ function MyApp({ Component, pageProps }) {
             <GlobalStyle />
             <AuthProvider>
                 <Layout>
-                  {/* <Header /> */}
+                    <Header /> 
                     <Component {...pageProps} />
+                    <Footer />
                 </Layout>
             </AuthProvider>
         </>

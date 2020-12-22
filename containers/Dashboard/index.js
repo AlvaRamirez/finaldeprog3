@@ -1,9 +1,9 @@
 import Container from "./styles";
 import { useProtected } from "lib/useProtected";
 import { PostsForm, ListPosts } from "components";
-import { Header } from "components";
+// import { Header } from "components";
 
-import Footer from "../Footer";
+// import Footer from "../Footer";
 
 const Dashboard = () => {
   const auth = useProtected();
@@ -12,7 +12,7 @@ const Dashboard = () => {
   console.log(`USUARIO`, auth);
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Container>
         <div className="dash">
           <h2 className="mail">Agrega tu proyecto</h2>
@@ -20,7 +20,7 @@ const Dashboard = () => {
           {/* <ListPosts  userId={auth.user.id}/> */}
         </div>
       </Container>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

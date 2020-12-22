@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from "next/head";
 import { Container as HeaderContainer } from "./styled";
 import { useProtected } from "lib/useProtected";

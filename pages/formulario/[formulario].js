@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Container } from "../../components/PostsForm/styles";
+import  Container  from "../../containers/Dashboard/styles";
 import { useRouter } from "next/router";
 import { updateCard } from "../api/posts/cards";
 
@@ -17,6 +17,7 @@ const PostsForm = () => {
 
   return (
     <Container>
+      <h2 class="mail">Edita tu proyecto</h2>
       <Formik
         initialValues={{ title, excerpt, content }}
         onSubmit={async (values, { setSubmitting }) => {
@@ -48,7 +49,7 @@ const PostsForm = () => {
           </Form>
         )}
       </Formik>
-      <p>{message}</p>
+      {/* <p>{message}</p> */}
     </Container>
   );
 };

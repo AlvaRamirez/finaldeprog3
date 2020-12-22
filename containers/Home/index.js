@@ -1,6 +1,6 @@
 import Cards from "../../components/Cards";
 import { Header } from "components";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 import React, { useState, useEffect } from "react";
 import { getAllCards } from "../../pages/api/posts/cards";
 
@@ -44,7 +44,7 @@ const Home = () => {
         <p>También podrás ver que suben los demas alumnos de la universidad, ¡animate a participar de la comunidad!</p>
       </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

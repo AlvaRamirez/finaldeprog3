@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { getCard } from '../api/posts/cards'
-import Footer from 'containers/Footer'
+// import Footer from 'containers/Footer'
 import Header2 from '../../components/Header2'
 
 const Contenido = () => {
@@ -30,7 +30,7 @@ const Contenido = () => {
     <p className="titp">{data?.content}</p>
     </div>
     </div>
-    <Footer />
+    {/* <Footer /> */}
   </>
 
   

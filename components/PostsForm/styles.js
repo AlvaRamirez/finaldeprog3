@@ -8,6 +8,7 @@ export const Container = styled.div`
     color: gray;
     font-size: 14px;
     font-family: 'Poppins',sans-serif;
+
 }
 /* margin-top:40px;
 width:100%;

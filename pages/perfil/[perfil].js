@@ -1,6 +1,6 @@
 import Cards from "../../components/Cards";
 import { Header } from "components";
-import Footer from "../../containers/Footer";
+// import Footer from "../../containers/Footer";
 import React, { useState, useEffect } from "react";
 import { getCardByUser, deleteCardById } from "../../pages/api/posts/cards";
 import { useRouter } from "next/router";
@@ -59,7 +59,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
