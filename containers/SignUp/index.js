@@ -15,7 +15,7 @@ const SignUp = () => {
                <h2>Registro</h2>
             <SignUpForm />
            
-            <div className="irasing"> <p>¿Ya tienes cuenta? <a href="login">Ingresa</a></p> </div>
+            <div className="irasing"> <p>¿Ya tienes cuenta? <a href="/login">Ingresa</a></p> </div>
            
             </div>
             </section>

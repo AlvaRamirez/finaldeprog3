@@ -12,13 +12,11 @@ function MyApp({ Component, pageProps }) {
         <>
             <GlobalStyle />
             <AuthProvider>
-            
                 <Layout>
                 <Header /> 
                     <Component {...pageProps} />
                     <Footer />
-                </Layout>
-                
+                </Layout>  
             </AuthProvider>
         </>
     )

@@ -17,7 +17,7 @@ const Login = () => {
            <div className="coninder">
            <h2>Ingreso</h2>
            <LoginForm />
-           <div className="irasing"> <p>¿No tienes cuenta? <a href="signup">Crea una</a></p> </div>
+           <div className="irasing"> <p>¿No tienes cuenta? <a href="/signup">Crea una</a></p> </div>
           
            </div>
            </section>
