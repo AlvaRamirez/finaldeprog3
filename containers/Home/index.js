@@ -19,7 +19,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div id="divcont">
         <h1 id="titd">Ultimos proyectos</h1>
         <div className="cardcont">

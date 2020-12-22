@@ -71,7 +71,7 @@ const PostsForm = ({ userId, userName }) => {
           </Form>
         )}
       </Formik>
-      <p>{message}</p>
+      {/* <p>{message}</p> */}
     </Container>
   );
 };

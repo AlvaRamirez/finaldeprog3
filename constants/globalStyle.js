@@ -29,6 +29,14 @@ a{
     min-height: 95.2vh;
     padding-bottom: 4em;
 }
+
+#nonebu{
+  background: #fff0;
+  padding: 0px !important;
+    margin: 0 auto !important;
+}
+
+
 h1 {
   color: #fff;
     margin: 0 auto;
@@ -40,6 +48,15 @@ h1 {
     padding-bottom: 1em;
 }
 
+.mod{
+  width: 50%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#tic{
+  width: 46% !important;
+}
 
 .inner {max-width:1200px; margin: 0 auto;}
 
@@ -110,8 +127,17 @@ ul{
 }
 
 .editaryeliminar{
-  display: flex;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+  
+  
+    padding-bottom: 10px;
 }
 
 #titd{

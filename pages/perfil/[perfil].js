@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div id="divcont">
         <h1> Tus proyectos:</h1>
         <div className="cardcont2">
@@ -38,14 +38,14 @@ const Home = () => {
               <Cards title={card.title} content={card.content} id={card.id} userId={card.user_id} />
               <div className="editaryeliminar">
               <div>
-                <button onClick={(e) => onDelete(e, card.id)}><img src="assets/delete.png"/> </button>
+                <button id="nonebu" onClick={(e) => onDelete(e, card.id)}><img className="mod" src="../../assets/delete.png"/> </button>
               </div>
               <div>
                 <NextLink
                   href={`/formulario/${card.id}-${card.title}-${card.excerpt}-${card.content}`}
                   data={"data"}
                 >
-                 <img src="assets/edit.png"/> 
+                 <img className="mod" id="tic" src="../../assets/edit.png"/> 
                 </NextLink>
               </div>
               </div>
