@@ -35,6 +35,15 @@ const Home = () => {
             </a>
           </div>
       </div>
+      <div id="question">
+        <div>
+        <img id="comoes" src="./assets/question.png"/>
+        </div>
+        <div id="comoest">
+        <p>En <strong>MaimoDesk</strong> podrás guardar y almacenar tus informes, aportes y escritos de la facultad, además de llevar un  control sobre ellos y poder editarlos.</p>
+        <p>También podrás ver que suben los demas alumnos de la universidad, ¡animate a participar de la comunidad!</p>
+      </div>
+      </div>
       <Footer />
     </>
   );

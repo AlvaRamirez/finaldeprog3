@@ -208,6 +208,48 @@ ul{
  
 }
 
+#question{
+  background-color: #1f82d5;
+    color: white;
+    padding:0px 0px 0px 20px;
+    border-radius: 2em;
+    position: fixed;
+    top: 750px;
+    left: 1730px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    transition:0.8s all;
+    font-size:13px;
+}
+
+#question:hover{
+  background-color: #1f82d5;
+    color: white;
+    padding:0px 0px 0px 20px;
+    font-size:13px;
+    border-radius: 2em;
+    position: fixed;
+    top: 750px;
+    left: 1030px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    transition:0.8s all;
+}
+
+#comoes{
+  margin-right: 3em;
+}
+
+#comoest{
+     width: 36%;
+}
+
 .card:hover{
   transition:0.6s all;
   width: 38rem !important;
