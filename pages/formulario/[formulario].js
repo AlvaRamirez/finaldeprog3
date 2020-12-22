@@ -10,7 +10,7 @@ const PostsForm = () => {
 
   const info = router?.query?.formulario?.split("-");
 
-  const [cardId, title, excerpt, content] = info;
+  const [cardId, title, excerpt, content] = info || [];
 
   return (
     <Container>
