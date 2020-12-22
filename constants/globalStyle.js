@@ -54,8 +54,24 @@ h1 {
     margin-right: 2em;
 }
 
+#tic2{
+  margin-left: 1.9em!important;
+  transition:0.6s all;
+}
+#tic2:hover{
+  transition:0.6s all;
+  transform:scale(1.1);
+}
+
 #tic{
-  width: 46% !important;
+  width: 45.5% !important;
+    cursor: pointer;
+    transition:0.6s all;
+}
+
+#tic:hover{
+  transition:0.6s all;
+  transform:scale(1.1);
 }
 
 .inner {max-width:1200px; margin: 0 auto;}
@@ -161,7 +177,7 @@ ul{
 }
 
 .contuni{
-  width: 10%;
+  width: 10.4%;
     margin: 0 auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;

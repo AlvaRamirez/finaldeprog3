@@ -38,7 +38,7 @@ const Home = () => {
               <Cards title={card.title} content={card.content} id={card.id} userId={card.user_id} />
               <div className="editaryeliminar">
               <div>
-                <button id="nonebu" onClick={(e) => onDelete(e, card.id)}><img className="mod" src="../../assets/delete.png"/> </button>
+                <button id="nonebu" onClick={(e) => onDelete(e, card.id)}><img id="tic2"className="mod" src="../../assets/delete.png"/> </button>
               </div>
               <div>
                 <NextLink
