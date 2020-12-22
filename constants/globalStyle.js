@@ -623,7 +623,7 @@ width: 60%;
 .titsub{
     text-align: center;
     color: #9c9c9c;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-style: oblique;
     margin-right: 10px;
   
@@ -634,7 +634,7 @@ width: 60%;
 
 .titp{
   padding: 20px;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 1.6;
     margin: 0 auto;
     font-family: 'Poppins',sans-serif;
