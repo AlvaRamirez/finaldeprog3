@@ -5,6 +5,7 @@ import { Container } from "./styles";
 import { addNewCard } from "../../pages/api/posts/cards";
 import { useUser } from "lib/useUser";
 import { useRouter } from "next/router";
+import { getUserById } from "../../pages/api/auth/get";
 
 const PostsForm = ({ userId, userName }) => {
   const [message, setMessage] = useState("");
@@ -29,6 +30,12 @@ const PostsForm = ({ userId, userName }) => {
         }}
         onSubmit={async (values, { setSubmitting }) => {
           try {
+            if (!userName) {
+              const res = await getUserById(userId);
+
+              userName = res.nombre;
+            }
+
             await addNewCard({ ...values, user_id: userId, userName });
 
             router.push("/");
