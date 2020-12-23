@@ -27,12 +27,6 @@ const SignUpForm = () => {
         onSubmit={async (values, { setSubmitting }) => {
           try {
               await auth.signup(values)
-            // // const res = await axios.post("api/auth/register", values);
-            // const data = await res.data;
-            // setSubmitting(false);
-            // setMessage(`${data.message} - ${data.name}`);
-            // router.push("/login")
-            
           } catch (error) {
             if (error.response) {
               /*
@@ -76,7 +70,6 @@ const SignUpForm = () => {
             <button
               className="botonlisto"
               type="submit"
-              disabled={isSubmitting}
             >
              Listo 
             </button>
