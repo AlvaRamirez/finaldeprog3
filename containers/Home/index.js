@@ -3,6 +3,7 @@ import { Header } from "components";
 // import Footer from "../Footer";
 import React, { useState, useEffect } from "react";
 import { getAllCards } from "../../pages/api/posts/cards";
+import { default as NextLink } from "next/link";
 
 const Home = () => {
   const [cards, setCards] = useState([]);
@@ -30,9 +31,9 @@ const Home = () => {
           
         </div>
         <div className="contuni">
-            <a href="dashboard">
+            <NextLink href="dashboard">
               <img src="./assets/plus.png"></img>
-            </a>
+            </NextLink>
           </div>
       </div>
       <div id="question">
