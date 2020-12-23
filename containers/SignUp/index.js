@@ -1,5 +1,6 @@
 import { SignUpForm } from 'components'
 import Container from './styles';
+import { default as NextLink } from "next/link";
 
 const SignUp = () => {
     return (
@@ -15,7 +16,7 @@ const SignUp = () => {
                <h2>Registro</h2>
             <SignUpForm />
            
-            <div className="irasing"> <p>¿Ya tienes cuenta? <a href="/login">Ingresa</a></p> </div>
+            <div className="irasing"> <p>¿Ya tienes cuenta? <NextLink href="/login">Ingresa</NextLink></p> </div>
            
             </div>
             </section>

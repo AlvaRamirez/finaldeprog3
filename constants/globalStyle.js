@@ -247,6 +247,7 @@ ul{
   justify-items: center;
     padding-top: 2em;
     display: grid;
+    padding-left: 1em;
  
 }
 

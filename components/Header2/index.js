@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Container as HeaderContainer } from './styled'
+import { default as NextLink } from "next/link";
 
 const Header2 = () => {
 
@@ -10,7 +11,7 @@ const Header2 = () => {
             <HeaderContainer>
               
                    <div>
-               <a className="flechusa" href="/"><p>🡰</p></a>
+               <NextLink className="flechusa" href="/"><p>🡰</p></NextLink>
                 </div>
                 
         
