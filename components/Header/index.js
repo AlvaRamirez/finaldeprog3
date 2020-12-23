@@ -16,10 +16,10 @@ const Header = () => {
 
       <HeaderContainer>
         <div className="contnav">
-          <a href="/">
+          <NextLink href="/">
             {" "}
             <img src="./assets/logo.png"></img>
-          </a>
+          </NextLink>
         </div>
 
         <div className="contnav">

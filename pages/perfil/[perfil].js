@@ -53,9 +53,9 @@ const Home = () => {
           ))}
 
           <div className="contuni">
-            <a href="/dashboard">
+            <NextLink href="/dashboard">
               <img src="../../assets/plus.png"></img>
-            </a>
+            </NextLink>
           </div>
         </div>
       </div>
