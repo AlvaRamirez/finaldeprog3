@@ -336,7 +336,6 @@ li img:active{
   font-family: 'Poppins',sans-serif;
     font-size: 15px;
     color: #5f5f5f;
-    height: 60px;
 }
 
 .card a{
@@ -371,7 +370,7 @@ li img:active{
 .userp{
   font-family: 'Poppins';
     font-size: 13px;
-    font-weight: 550;
+    font-weight: 500;
     color: #797979 !important;
     padding-top: 1.6em;
 }
